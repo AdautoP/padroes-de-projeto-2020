@@ -41,9 +41,9 @@ class Celular {
     }
   }
   
-  let Fusca = new celularBuilder('Samsung', 'S20')
+  let celular = new celularBuilder('Samsung', 'S20')
     .setAno(2020)
     .setCor("preto")
     .build()
   
-  console.log(Fusca)
+  console.log(celular)
