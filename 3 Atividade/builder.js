@@ -1,23 +1,23 @@
 //Equipe: Adauto Pinheiro, Jorge Girão, Jose Sergio, Andersson Cláudio
 
-//Carro Builder
+//Celular Builder
 
-class Carro {
+class Celular {
     constructor(cor, ano, nome, montadora) {
       this.cor = cor
       this.ano = ano
       this.nome = nome 
       this.montadora = montadora
     }
-    drive() {
-      console.log(`dirigindo`)
+    ligar() {
+      console.log(`ligação`)
     }
-    reverse() {
-      console.log(`ré`)
+    desligar() {
+      console.log(`desligando ligação`)
     }
   }
   
-  class carroBuilder {
+  class celularBuilder {
     constructor(montadora, nome) {
       this.montadora = montadora
       this.nome = nome
@@ -37,12 +37,12 @@ class Carro {
       if (!('cor' in this)) {
         throw new Error('Faltando a cor')
       }
-      return new Carro(this.cor, this.ano, this.nome, this.montadora)
+      return new Celular(this.cor, this.ano, this.nome, this.montadora)
     }
   }
   
-  let Fusca = new carroBuilder('volkswagen', 'fusca')
-    .setAno(1970)
+  let Fusca = new celularBuilder('Samsung', 'S20')
+    .setAno(2020)
     .setCor("preto")
     .build()
   
